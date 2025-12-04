@@ -2,28 +2,28 @@
 
 ### Add Friend
 
-https://YOUR_USERNAME.github.io/YOUR_REPO/dom/add-friend/
+https://letbrocode.github.io/cohort2/dom/add-friend/
 
 ### Custom Cursor
 
-https://YOUR_USERNAME.github.io/YOUR_REPO/dom/custom-cursor/
+https://letbrocode.github.io/cohort2/dom/custom-cursor/
 
 ### Img Hovering
 
-https://YOUR_USERNAME.github.io/YOUR_REPO/dom/img-hovering/
+https://letbrocode.github.io/cohort2/dom/img-hovering/
 
 ### Insta Like
 
-https://YOUR_USERNAME.github.io/YOUR_REPO/dom/insta-like/
+https://letbrocode.github.io/cohort2/dom/insta-like/
 
 ### Insta Like (New)
 
-https://YOUR_USERNAME.github.io/YOUR_REPO/dom/insta-like-new/
+https://letbrocode.github.io/cohort2/dom/insta-like-new/
 
 ### Insta Story Feature
 
-https://YOUR_USERNAME.github.io/YOUR_REPO/dom/insta-story-feat/
+https://letbrocode.github.io/cohort2/dom/insta-story-feat/
 
 ### Random Button
 
-https://YOUR_USERNAME.github.io/YOUR_REPO/dom/random-btn/
+https://letbrocode.github.io/cohort2/dom/random-btn/
