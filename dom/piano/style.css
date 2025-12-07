@@ -1,0 +1,185 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #111827;
+  color: #e5e7eb;
+}
+
+.piano-wrapper {
+  text-align: center;
+  padding: 20px 24px;
+  border-radius: 16px;
+  background: rgba(15, 23, 42, 0.92);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.45);
+  max-width: 640px;
+  width: 100%;
+}
+
+h1 {
+  font-size: 1.4rem;
+  margin-bottom: 6px;
+}
+
+.subtitle {
+  font-size: 0.85rem;
+  margin-bottom: 16px;
+  opacity: 0.8;
+}
+
+.piano {
+  position: relative;
+  display: inline-block;
+  padding: 16px;
+  border-radius: 12px;
+  background: #020617;
+}
+
+.white-keys {
+  display: flex;
+}
+
+.key {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.05s ease, box-shadow 0.05s ease, background 0.06s ease;
+}
+
+.white-key {
+  width: 70px;
+  height: 200px;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  background: linear-gradient(to bottom, #f9fafb, #e5e7eb);
+  padding-bottom: 10px;
+  box-shadow: 0 4px 0 #6b7280;
+  margin-right: 4px;
+}
+
+.white-key:last-child {
+  margin-right: 0;
+}
+
+.black-keys {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 60%;
+  width: 100%;
+  pointer-events: none; /* allow clicks only on actual black keys */
+}
+
+/* Base black key style */
+.black-key {
+  position: absolute;
+  width: 40px;
+  height: 120px;
+  border-radius: 0 0 8px 8px;
+  background: linear-gradient(to bottom, #111827, #020617);
+  border: 1px solid #020617;
+  box-shadow: 0 4px 0 #000000;
+  padding-bottom: 8px;
+  z-index: 2;
+  color: #e5e7eb;
+  pointer-events: auto; /* re-enable on keys themselves */
+}
+
+/* Position each black key over the correct gap between white keys */
+.black-key:nth-child(1) {
+  /* C# between C & D */
+  left: 50px;
+}
+.black-key:nth-child(2) {
+  /* D# between D & E */
+  left: 120px;
+}
+/* no black key between E and F */
+.black-key:nth-child(3) {
+  /* F# between F & G */
+  left: 260px;
+}
+.black-key:nth-child(4) {
+  /* G# between G & A */
+  left: 330px;
+}
+.black-key:nth-child(5) {
+  /* A# between A & B */
+  left: 400px;
+}
+
+.key span {
+  display: block;
+  font-size: 0.7rem;
+  line-height: 1.1;
+}
+
+.note-label {
+  font-weight: 600;
+}
+
+.white-key .note-label {
+  color: #111827;
+}
+
+.key-label {
+  opacity: 0.7;
+}
+
+.key.active {
+  transform: translateY(3px);
+  box-shadow: 0 1px 0 #000000;
+  filter: brightness(0.95);
+}
+
+.help {
+  font-size: 0.8rem;
+  margin-top: 8px;
+  opacity: 0.75;
+}
+
+@media (max-width: 600px) {
+  .piano-wrapper {
+    padding: 16px;
+  }
+  .piano {
+    padding: 12px;
+  }
+  .white-key {
+    width: 45px;
+    height: 160px;
+  }
+  .black-key {
+    width: 30px;
+    height: 100px;
+  }
+  /* Adjust positions a bit for smaller width */
+  .black-key:nth-child(1) {
+    left: 32px;
+  }
+  .black-key:nth-child(2) {
+    left: 80px;
+  }
+  .black-key:nth-child(3) {
+    left: 176px;
+  }
+  .black-key:nth-child(4) {
+    left: 224px;
+  }
+  .black-key:nth-child(5) {
+    left: 272px;
+  }
+}

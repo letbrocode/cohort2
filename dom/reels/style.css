@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(
+    to right bottom,
+    rgb(26, 26, 26),
+    rgb(35, 35, 35),
+    black
+  );
+  padding: 20px;
+}
+
+section {
+  height: 100%;
+  width: 350px;
+  background-color: black;
+  border-radius: 10px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.all-reels {
+  height: 100%;
+  width: 100%;
+}
+
+.reel {
+  height: 100%;
+  width: 100%;
+  background-color: lightseagreen;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.reel img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.reel .bottom {
+  padding: 30px 20px;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.818));
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.bottom .user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.bottom .user img {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.bottom > h3 {
+  font-weight: 500;
+  font-size: 20px;
+}

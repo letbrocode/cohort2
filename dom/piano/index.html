@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Simple Keyboard Piano</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="piano-wrapper">
+      <h1>Simple Keyboard Piano</h1>
+      <p class="subtitle">
+        Click the keys or use your keyboard:
+        <strong>A S D F G H J</strong> (white) &amp;
+        <strong>W E T Y U</strong> (black)
+      </p>
+
+      <div class="piano" id="piano">
+        <!-- White keys row -->
+        <div class="white-keys">
+          <div
+            class="key white-key"
+            data-note="C"
+            data-freq="261.63"
+            data-key="a"
+          >
+            <span class="note-label">C</span>
+            <span class="key-label">A</span>
+          </div>
+          <div
+            class="key white-key"
+            data-note="D"
+            data-freq="293.66"
+            data-key="s"
+          >
+            <span class="note-label">D</span>
+            <span class="key-label">S</span>
+          </div>
+          <div
+            class="key white-key"
+            data-note="E"
+            data-freq="329.63"
+            data-key="d"
+          >
+            <span class="note-label">E</span>
+            <span class="key-label">D</span>
+          </div>
+          <div
+            class="key white-key"
+            data-note="F"
+            data-freq="349.23"
+            data-key="f"
+          >
+            <span class="note-label">F</span>
+            <span class="key-label">F</span>
+          </div>
+          <div
+            class="key white-key"
+            data-note="G"
+            data-freq="392.00"
+            data-key="g"
+          >
+            <span class="note-label">G</span>
+            <span class="key-label">G</span>
+          </div>
+          <div
+            class="key white-key"
+            data-note="A"
+            data-freq="440.00"
+            data-key="h"
+          >
+            <span class="note-label">A</span>
+            <span class="key-label">H</span>
+          </div>
+          <div
+            class="key white-key"
+            data-note="B"
+            data-freq="493.88"
+            data-key="j"
+          >
+            <span class="note-label">B</span>
+            <span class="key-label">J</span>
+          </div>
+        </div>
+
+        <!-- Black keys row -->
+        <div class="black-keys">
+          <!-- Positioned via CSS nth-child -->
+          <div
+            class="key black-key"
+            data-note="C#"
+            data-freq="277.18"
+            data-key="w"
+          >
+            <span class="note-label">C#</span>
+            <span class="key-label">W</span>
+          </div>
+          <div
+            class="key black-key"
+            data-note="D#"
+            data-freq="311.13"
+            data-key="e"
+          >
+            <span class="note-label">D#</span>
+            <span class="key-label">E</span>
+          </div>
+          <!-- No black key between E and F -->
+          <div
+            class="key black-key"
+            data-note="F#"
+            data-freq="369.99"
+            data-key="t"
+          >
+            <span class="note-label">F#</span>
+            <span class="key-label">T</span>
+          </div>
+          <div
+            class="key black-key"
+            data-note="G#"
+            data-freq="415.30"
+            data-key="y"
+          >
+            <span class="note-label">G#</span>
+            <span class="key-label">Y</span>
+          </div>
+          <div
+            class="key black-key"
+            data-note="A#"
+            data-freq="466.16"
+            data-key="u"
+          >
+            <span class="note-label">A#</span>
+            <span class="key-label">U</span>
+          </div>
+        </div>
+      </div>
+
+      <p class="help">
+        Tip: Some browsers need one click anywhere in the page before sound
+        works.
+      </p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
