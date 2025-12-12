@@ -27,3 +27,37 @@ https://letbrocode.github.io/cohort2/dom/insta-story-feat/
 ### Random Button
 
 https://letbrocode.github.io/cohort2/dom/random-btn/
+
+### Music Player
+
+https://letbrocode.github.io/cohort2/dom/music-player/
+
+### Piano
+
+https://letbrocode.github.io/cohort2/dom/piano/
+
+### Reels Demo
+
+https://letbrocode.github.io/cohort2/dom/reels/
+
+### Spotlight Effect
+
+https://letbrocode.github.io/cohort2/dom/spotlight-effect/
+
+### Matrix Text
+
+https://letbrocode.github.io/cohort2/dom/matrix-text/
+
+## Advanced CSS Mini Projects
+
+### Keyframes Demo
+
+https://letbrocode.github.io/cohort2/adv-css/keyframes-demo/
+
+### Glowing Cards
+
+https://letbrocode.github.io/cohort2/adv-css/glowing-cards/
+
+### Navbar
+
+https://letbrocode.github.io/cohort2/adv-css/navbar/
